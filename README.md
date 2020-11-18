@@ -1,17 +1,16 @@
 # Fresh Fruit
 
-Aplikasi ini tujuannya adalah untuk menjaga keamanan pengemudi agar bisa selamat sampai tujuan.
+Aplikasi sederhana ini adalah untuk Menambahkan Buah ke dalam Keranjang.
 
 ## Scope & Functionalities
 
-- Apa kegunaan DoorController.cs?
-- Apa kegunaan model Door.cs?
-- Apa kegunaan Interface OnDoorChanged ?
+- User dapat memilih atau menambahkan buah ke keranjang.
+- Maksimal buah yang bisa ditambahkan hanya bisa 4 buah saja.
+- User akan mendapatkan notif jika udah mencapai batas maksimal.
 
 ## How Does it Works?
 
-## 1. DoorController.cs
-`DoorController.cs` Berfungsi untuk mengetahui keadaan pintu mobil apakah sudah terkunci atau belum terkunci.
+## - `Bucket.cs`, `Bucket.cs`, `Bucket.cs`, `Bucket.cs`  Berfungsi untuk mengetahui keadaan pintu mobil apakah sudah terkunci atau belum terkunci.
 
 ```csharp
 namespace TheNextCar.Controller
