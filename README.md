@@ -10,7 +10,7 @@ Aplikasi sederhana ini adalah untuk Menambahkan Buah ke dalam Keranjang.
 
 ## How Does it Works?
 
-## - `Bucket.cs`, `Bucket.cs`, `Bucket.cs`, `Bucket.cs`  Berfungsi untuk mengetahui keadaan pintu mobil apakah sudah terkunci atau belum terkunci.
+- `Bucket.cs`, `BucketEventListener.cs`, `Fruit.cs`, `Seller.cs` Berada pada folder Konsep Model.
 
 ```csharp
 namespace TheNextCar.Controller
