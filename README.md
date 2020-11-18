@@ -10,7 +10,7 @@ Aplikasi sederhana ini adalah untuk Menambahkan Buah ke dalam Keranjang.
 
 ## How Does it Works?
 
-- `Bucket.cs`, `BucketEventListener.cs`, `Fruit.cs`, `Seller.cs` Berada pada folder Konsep Model.
+- Di dalam folder Model, terdapat 4 class yaitu `Bucket.cs`, `BucketEventListener.cs`, `Fruit.cs`, `Seller.cs`.
 
 ```csharp
 namespace TheNextCar.Controller
