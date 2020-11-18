@@ -12,20 +12,21 @@ Aplikasi sederhana ini adalah untuk Menambahkan Buah ke dalam Keranjang.
 
 - Di dalam folder Model, terdapat 4 class yaitu `Bucket.cs`, `BucketEventListener.cs`, `Fruit.cs`, `Seller.cs`.
 
-- `model Door.cs` Berfungsi untuk fungsi door closed dan locked.
+- `MainWindow.xaml` Berfungsi untuk menampilkan program ini.
 
-- `OnDoorChanged` berfungsi untuk mengganti fungsi Door dan DoorController.
+- Di dalam folder Controller, terdapat class `BucketController.cs`.
 
+Diawali dengan Method `MainWindow` pada class `MainWindow.xaml.cs` dideklarasikan menjadi.....
 ```csharp
-public DoorController(OnDoorChanged callbackOnDoorChanged)
+public MainWindow()
         {
-            this.callbackOnDoorChanged = callbackOnDoorChanged;
-            this.door = new Door();
-        }
+            InitializeComponent();
 
-        public void close()
-        {
-            this.door.close();
-            this.callbackOnDoorChanged.onDoorOpenStateChanged("CLOSED", "door closed");
+            Bucket keranjangBuah = new Bucket(4);
+            BucketController bucketController = new BucketController(keranjangBuah, this);
+
+            toni = new Seller("Toni", bucketController);
+
+            listBoxBucket.ItemsSource = keranjangBuah.findAll();
         }
 ```
